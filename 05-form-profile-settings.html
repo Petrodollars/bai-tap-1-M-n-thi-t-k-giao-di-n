@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cài đặt hồ sơ - Tài khoản cá nhân</title>
+    <link rel="stylesheet" href="styles-luxury.css" />
+  </head>
+  <body>
+    <header>
+      <h1>⚙️ Cài đặt hồ sơ</h1>
+    </header>
+
+    <main>
+      <form>
+        <section>
+          <h2>Thông tin tài khoản</h2>
+          <label for="fullName">Họ và tên</label>
+          <input id="fullName" type="text" placeholder="Nhập họ và tên của bạn" />
+
+          <label for="email">Địa chỉ Email</label>
+          <input id="email" type="email" placeholder="your.email@example.com" />
+
+          <label for="language">Ngôn ngữ ưu tiên</label>
+          <select id="language">
+            <option>Tiếng Việt</option>
+            <option>Tiếng Anh (English)</option>
+            <option>Tiếng Nhật (Japanese)</option>
+            <option>Tiếng Pháp (French)</option>
+            <option>Tiếng Đức (German)</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>Tùy chọn thông báo</h2>
+          <label>
+            <input type="checkbox" checked />
+            <strong>Thông báo qua Email</strong>
+            <p class="text-muted" style="margin: 0; font-size: 0.9rem;">Nhận cập nhật về tài khoản và hoạt động của bạn</p>
+          </label>
+          <label class="mt-lg">
+            <input type="checkbox" />
+            <strong>Thông tin tiếp thị</strong>
+            <p class="text-muted" style="margin: 0; font-size: 0.9rem;">Nhận tin tức về các ưu đãi đặc biệt và tính năng mới</p>
+          </label>
+
+          <label for="theme" class="mt-lg">Giao diện hiển thị</label>
+          <select id="theme">
+            <option>Sáng (Light)</option>
+            <option>Tối (Dark)</option>
+            <option>Mặc định hệ thống</option>
+          </select>
+        </section>
+
+        <section>
+          <h2>Bảo mật</h2>
+          <div class="v-stack">
+            <button type="button" class="btn-secondary">Đổi mật khẩu</button>
+            <button type="button" class="btn-secondary">Kích hoạt xác thực 2 lớp (2FA)</button>
+          </div>
+        </section>
+
+        <section>
+          <div class="h-stack" style="justify-content: flex-end; gap: var(--spacing-lg);">
+            <button type="button" class="btn-secondary">Hủy thay đổi</button>
+            <button type="submit" class="btn-lg">Lưu thay đổi</button>
+          </div>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
